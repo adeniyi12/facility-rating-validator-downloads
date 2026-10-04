@@ -2,13 +2,13 @@
 
 Download the desktop application for macOS or Windows. Python and a GitHub account are not required.
 
-## Version 0.6.2 preview
+## Version 0.6.3 preview
 
-- [Mac — Apple Silicon (M-series)](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.2/FacilityRatingValidator-0.6.2-macOS-arm64.zip)
-- [Mac — Intel](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.2/FacilityRatingValidator-0.6.2-macOS-x64.zip)
-- [Windows — x64](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.2/FacilityRatingValidator-0.6.2-Windows-x64.zip)
+- [Mac — Apple Silicon (M-series)](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.3/FacilityRatingValidator-0.6.3-macOS-arm64.zip)
+- [Mac — Intel](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.3/FacilityRatingValidator-0.6.3-macOS-x64.zip)
+- [Windows — x64](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.3/FacilityRatingValidator-0.6.3-Windows-x64.zip)
 
-[Release notes and SHA-256 checksums](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/tag/v0.6.2)
+[Release notes and SHA-256 checksums](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/tag/v0.6.3)
 
 Extract the entire ZIP before launching. On Mac, copy `FacilityRatingValidator.app` to Applications. On Windows, keep the extracted folder and its dependencies together and open `FacilityRatingValidator.exe`.
 
@@ -20,11 +20,12 @@ All three packages passed automated tests and bundled checks for database operat
 
 This repository contains downloads and installation information. Application development is maintained separately.
 
-## Changes in 0.6.2
+## Changes in 0.6.3
 
-- Supports utility reports with Equip Category and seasonal temperature headers.
-- Matches repeat imports by Location + Equip Category + Equip Type. Identical records are skipped; changed or ambiguous matches require review.
-- Includes equipment categories in calculation results and replacement scenarios.
-- Uses eight day/night conditions, excluding STE 2Hr from new calculations.
-- Rounds converted ratings to whole numbers without accumulating loss when switching units.
-- Preserves historical ratings during metadata edits and recognizes additional utility equipment types.
+- Creates or updates a facility during report import; substation is optional.
+- Preserves report metadata and supplied ratings, defaults unspecified units to MVA, and improves repeat-import matching.
+- Supports scenarios with multiple equipment replacements or removals.
+- Deletes facilities and their saved calculation/scenario data after confirmation, while retaining catalog equipment.
+- Supports copying and pasting Excel rating ranges with validation and undo.
+- Shows eight day/night conditions in the editor while preserving older saved values.
+- Protects against stale facility reviews and rolls back failed imports and schema upgrades.
