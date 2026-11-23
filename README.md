@@ -5,7 +5,7 @@ Download the desktop application for macOS or Windows. Python and a GitHub accou
 ## Version 0.6.4 preview
 
 - [Mac — Apple Silicon (M-series)](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.4/FacilityRatingValidator-0.6.4-macOS-arm64.zip)
-- [Mac — Intel (v0.6.3)](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.3/FacilityRatingValidator-0.6.3-macOS-x64.zip)
+- [Mac — Intel](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.4/FacilityRatingValidator-0.6.4-macOS-x64.zip)
 - [Windows — x64 (v0.6.3)](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/download/v0.6.3/FacilityRatingValidator-0.6.3-Windows-x64.zip)
 
 [Release notes and SHA-256 checksums](https://github.com/adeniyi12/facility-rating-validator-downloads/releases/tag/v0.6.4)
